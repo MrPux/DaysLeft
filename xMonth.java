@@ -1,10 +1,10 @@
-public class Month
+public class xMonth
 {
 	String name;
 	int monthNum;
 	int monthDays;
 
-	public Month(String name, int monthNum, int monthDays){
+	public xMonth(String name, int monthNum, int monthDays){
 		this.name = name;
 		this.monthNum = monthNum;
 		this.monthDays = monthDays;

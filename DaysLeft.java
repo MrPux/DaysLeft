@@ -3,24 +3,25 @@ import java.util.Scanner;
 
  public class DaysLeft {
 
-	static Months months = new Months();
 	static Calculate calculate = new Calculate();
 	static Scanner input = new Scanner(System.in);
 
 
  	public static void main(String[] args)
  	{
+			xMonths months = new xMonths();
+
   		// Month June = new Month("June", 6, 30);
 		months.genMonths(); 
 		// Prompt a request of Initial Month 
 		System.out.println("What is the beggining Month name: ");
 		String firstMonth = input.nextLine();
-		Month monthOne = months.getMonth(firstMonth);
+		XMonth monthOne = months.getMonth(firstMonth);
 		
 		// Prompt a request of Ending MonthJu
 		System.out.println("What is the ending Month name: ");
 		String secondMonth = input.nextLine();
-		Month monthTwo = months.getMonth(secondMonth); 
+		XMonth monthTwo = months.getMonth(secondMonth); 
 		// Prompt a request of Intial Day
 		System.out.println("What is the beggining Day number: ");
 		int begginingDay = input.nextInt();
