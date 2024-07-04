@@ -9,19 +9,19 @@ import java.util.Scanner;
 
  	public static void main(String[] args)
  	{
-			xMonths months = new xMonths();
+		Months months = new Months();
 
   		// Month June = new Month("June", 6, 30);
 		months.genMonths(); 
 		// Prompt a request of Initial Month 
 		System.out.println("What is the beggining Month name: ");
 		String firstMonth = input.nextLine();
-		XMonth monthOne = months.getMonth(firstMonth);
+		xMonth monthOne = months.getMonth(firstMonth);
 		
 		// Prompt a request of Ending MonthJu
 		System.out.println("What is the ending Month name: ");
 		String secondMonth = input.nextLine();
-		XMonth monthTwo = months.getMonth(secondMonth); 
+		xMonth monthTwo = months.getMonth(secondMonth); 
 		// Prompt a request of Intial Day
 		System.out.println("What is the beggining Day number: ");
 		int begginingDay = input.nextInt();
